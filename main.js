@@ -107,7 +107,7 @@ const expelStudent = document.querySelector("#app")
 
 expelStudent.addEventListener("click", (e) => {
   if(e.target.id.includes("expel")){
-    const [,index] = e.target.id.split("--");
+    const [, index] = e.target.id.split("--");
       expelledStudents.push(students[index])
       students.splice(index, 1)
     renderToDom(students)
@@ -146,7 +146,7 @@ filterButtons.addEventListener("click", (e) => {
     cardsOnDom(pets) 
   } else {
   
-  filter(house.type);
+  //filter(house.type);
   }
 });
 
